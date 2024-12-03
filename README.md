@@ -1,2 +1,1 @@
-# AboutMe
-A simple web page featuring info about Me, My skills, My interests and what services I offer.
+Click [here](https://quasarnet.github.io/AboutMe) to find out more about Me!
