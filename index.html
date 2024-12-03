@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Quasar Dev • About Me</title>
+    
+  <meta name="author" content="Quasar Developer">
+  <meta name="description" content="Info about Me, My skills, My interests, services I offer and social media as well as contact details.">
+  <meta name="keywords" content="Info, Information, About, Me, Skills, Interests, Services, Social, Media, Contact, Details">
+
+  <meta property="og:title" content="Quasar Dev • About Me">
+  <meta property="og:description" content="Info about Me, My skills, My interests, services I offer and social media as well as contact details.">
+  <meta property="og:url" content="https://quasarnet.github.io/AboutMe">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000018;
+      color: white;
+      overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: white;
+      border-radius: 5px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #1e1e1e;
+      border-radius: 10px;
+      margin-top: 15px;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .nav-buttons button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #141414;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .nav-buttons button:hover {
+      background: #282828;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #141414;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+    .search-bar input {
+      border: none;
+      background: none;
+      color: white;
+      margin-left: 10px;
+      width: 150px;
+    }
+    .search-bar input:focus {
+      outline: none;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #2e2e2e;
+      border-radius: 10px;
+      display: none;
+      flex-direction: column;
+      z-index: 10;
+    }
+    .dropdown-menu a {
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+    .dropdown-menu a:hover {
+      background: #3e3e3e;
+      border-radius: 10px;
+    }
+    .dropdown.show .dropdown-menu {
+      display: flex;
+    }
+    .main-content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .main-content h4 {
+      margin-bottom: 10px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .buttons button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #141414;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .buttons button:hover {
+      background: #282828;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #141414;
+      border-top: 1px solid white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-buttons">
+      <button onclick="window.location.href='about-me.html';">
+        <img src="about.png" alt="About" width="22"> About Me
+      </button>
+      <button onclick="window.location.href='my-skills.html';">
+        <img src="skills.png" alt="Skills" width="22"> My Skills
+      </button>
+      <button onclick="window.location.href='my-interests.html';">
+        <img src="interests.png" alt="Interests" width="22"> My Interests
+      </button>
+      <button onclick="window.location.href='my-services.html';">
+        <img src="services.png" alt="Services" width="22"> My Services
+      </button>
+      <button onclick="window.location.href='contact-and-social.html';">
+        <img src="social-and-contact.png" alt="Socials & Contact" width="22"> Social Media & Contact
+      </button>
+    </div>
+    <div class="search-bar dropdown">
+      <img src="search.png" alt="Search" width="22">
+      <input type="text" id="search" placeholder="Search for a page..." oninput="showDropdown()">
+      <div class="dropdown-menu"></div>
+    </div>
+  </div>
+
+    <br>
+     <br>
+    <br>
+     <br>
+    
+  <div class="main-content">
+    <h4>Welcome to My "about Me" site!</h4>
+    <p>You can find all info regarding Me, My skills, interests, services and social media / contact info here!</p>
+      
+    <p>Want to look at some of My other projects? Or maybe watch a few of My videos on YouTube?</p>
+    <div class="buttons">
+      <button onclick="window.location.href='https://github.com/quasarnet';">
+        <img src="github.png" alt="GitHub" width="24"> Repo's
+      </button>
+      <button onclick="window.location.href='https://youtube.com/@quasar.developer';">
+        <img src="youtube.png" alt="YouTube" width="24"> YouTube channel
+      </button>
+    </div>
+  </div>
+
+  <div class="footer">
+    © Quasar Developer 2024, all rights reserved.
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    function showDropdown() {
+      const query = searchInput.value.toLowerCase();
+      const pages = [
+        { name: 'About', link: 'about-me.html' },
+        { name: 'Skills', link: 'my-skills.html' },
+        { name: 'Interests', link: 'my-interests.html' },
+        { name: 'Services', link: 'my-services.html' },
+        { name: 'Contact & Social', link: 'contact-and-social.html' },
+      ];
+      const results = pages.filter(page => page.name.toLowerCase().includes(query));
+      dropdownMenu.innerHTML = results
+        .map(result => `<a href="${result.link}">${result.name}</a>`)
+        .join('');
+      document.querySelector('.dropdown').classList.toggle('show', results.length > 0);
+    }
+  </script>
+
+</body>
+</html>
